@@ -1,4 +1,6 @@
-# How I Converted Shit
+# Image Aspect-Ratio Normalizer for Slideshows
+
+This is a little bit of shell magic to process a directory of images and normalize them with black borders so every image becomes exactly 4k resolution at the exact same aspect ratio. It's useful for importing images into premier and avoiding Premier auto-zooming your images. When premiere auto-zooms your images, its harder to apply slideshow presenst like a ken-burns effect since the zoom needs to be dynamic. A static zoom will work if you use images processed by code in this repo.
 
 ## Install ImageMagick
 
@@ -26,7 +28,7 @@ done
 Then we resize all images to precisely 16:9:
 
 - Script to re-orient and resize to 4k exactly
-- EVERY image is 3840x2160, give or take a few pixels. This means images come into Premiere unscaled.
+- In the end, EVERY image is 3840x2160, give or take a few pixels. This means images come into Premiere unscaled.
 - Square -> Landscape
 - Portrait -> Landscape
 - Non-16:9 Landscape to 16:9
